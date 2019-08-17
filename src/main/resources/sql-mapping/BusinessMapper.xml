@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangzai.dao.BusinessMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wangzai.entity.Business">
+        <id column="business_id" property="businessId" />
+        <result column="business_name" property="businessName" />
+        <result column="access_key" property="accessKey" />
+        <result column="secret_key" property="secretKey" />
+        <result column="business_remarks" property="businessRemarks" />
+        <result column="business_state" property="businessState" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="create_time" property="createTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+</mapper>
